@@ -1,0 +1,22 @@
+/* index.css
+.bg-bannerImg {
+    background-image: url('/path/to/your/image.jpg');
+  }
+  
+  @media (min-width: 640px) {
+    .bg-bannerImg {
+      background-image: url('/path/to/your/image-sm.jpg');
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bg-bannerImg {
+      background-image: url('/path/to/your/image-md.jpg');
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bg-bannerImg {
+      background-image: url('/path/to/your/image-lg.jpg');
+    }
+  } */
