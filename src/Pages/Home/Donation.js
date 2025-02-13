@@ -1,11 +1,14 @@
 import React from "react";
+import { Slide } from "react-awesome-reveal";
 import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
 
 const Donation = () => {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row lg:gap-10">
         {/* Responsive Video Container */}
+
         <div className="w-full">
           <div className="relative pb-[56.25%] h-0">
             <ReactPlayer
@@ -19,14 +22,18 @@ const Donation = () => {
         </div>
 
         {/* Text Content */}
-        <div className="p-5">
-          <h1 className="text-5xl font-bold">Benefits of Donation</h1>
-          <h1 className="text-xl font-semibold font-mono">
-            “Charity extinguishes sin like water extinguishes fire”
-          </h1>
-          <p className="py-6">- Prophet Mohammed (Peace be upon Him)</p>
-          <button className="btn bg-orange-400 text-white">Membership</button>
-        </div>
+        <Slide direction="right">
+          <div className="p-5">
+            <h1 className="text-5xl font-bold">Benefits of Donation</h1>
+            <h1 className="text-xl font-semibold font-mono">
+              “Charity extinguishes sin like water extinguishes fire”
+            </h1>
+            <p className="py-6">- Prophet Mohammed (Peace be upon Him)</p>
+            <button className="btn bg-orange-400 text-white">
+              <Link to="/membership">Membership</Link>
+            </button>
+          </div>
+        </Slide>
       </div>
     </div>
   );
